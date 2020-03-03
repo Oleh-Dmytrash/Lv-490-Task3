@@ -32,8 +32,13 @@ string DirectoryFilesParser::ParseFiles(string directory_path)
     auto time_of_execution2 = chrono::duration_cast<chrono::milliseconds>(stop_timer - start_timer);    
 
     parse_info.append("Parsed files count: \t" + to_string(reader.GetFileCount()) + '\n');
-    parse_info.append("Time of execution: \t" + to_string(time_of_execution1.count()) + " micoseconds\n");
+    parse_info.append("Time of execution: \t" + to_string(time_of_execution1.count()) + " microseconds\n");
     parse_info.append("Time of execution: \t" + to_string(time_of_execution2.count()) + " milliseconds\n");
+
+    ofstream output(directory_path + "parsing_result.txt");
+    if (!output.is_open()) throw exception("can't open/create file");
+    output << parse_info;
+    output.close();
 
     return parse_info;
 }
