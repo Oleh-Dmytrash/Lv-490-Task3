@@ -8,24 +8,9 @@ int main()
 {
     DirectoryFilesParser dp;
 
-    string res = dp.ParseFiles("D:/programing/softserve/anytype_copy/AnyType/");
+    string res = dp.ParseFiles("D:/programing/softserve/anytype_copy/TEST/");
 
-    cout << res;
-
-    /*DirectoryReader reader("D:/programing/softserve/anytype_copy/AnyType/");
-    reader.ReadDirectory();
-
-    for (int i = 0; i < reader.GetFileCount(); ++i)
-    {
-        cout << reader.GetPath(i) << "\n\n";
-    }
-
-    CodeParser cp;
-
-    cp.Parse(reader.GetPath(0));
-
-    cout << cp.GetResult();*/
-    //std::cout << "Hello World!\n";
+    cout << res;   
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

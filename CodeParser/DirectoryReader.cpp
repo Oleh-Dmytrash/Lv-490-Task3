@@ -2,7 +2,7 @@
 
 void DirectoryReader::ReadDirectory()
 {
-	filesystem::path path = m_directory_path;
+	filesystem::path directory_path = m_directory_path;
 	if (m_directory_path == "") return;
 
 	if (!filesystem::is_directory(m_directory_path)) return;
