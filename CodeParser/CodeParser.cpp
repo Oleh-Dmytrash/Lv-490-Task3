@@ -4,6 +4,9 @@
 
 void CodeParser::Parse(string file_path)
 {
+	m_blank_lines_count = 0;
+	m_code_lines_count = 0;
+	m_comment_lines_count = 0;
 	if (file_path == "" || !filesystem::is_regular_file(file_path)) return;//check if file path is valid
 
 	m_file_path = file_path;
@@ -18,14 +21,14 @@ void CodeParser::Parse(string file_path)
 	smatch finded_words;//finded word array
 	while (getline(read_file, text))
 	{
-		if (is_comment_block)
+		if (is_comment_block)//readed line is a comment block
 		{
 			++m_comment_lines_count;
-			if (regex_search(text, finded_words, expresion = "\\*/"))
+			if (regex_search(text, finded_words, expresion = "\\*/"))//readed line is the end of comment block
 			{
 				is_comment_block = false;
 				int comment_position = finded_words.position(0);
-				if (regex_search(text, finded_words, expresion = "[a-zA-Z0-9{}]+"))
+				if (regex_search(text, finded_words, expresion = "[a-zA-Z0-9{}]+"))//search code lines
 				{
 					if (finded_words.position(finded_words.size() - 1) < comment_position)
 					{
@@ -35,17 +38,17 @@ void CodeParser::Parse(string file_path)
 			}
 		}
 		else
-			if (regex_match(text, expresion = "^\\s*"))
+			if (regex_match(text, expresion = "^\\s*"))//readed line is empty
 			{
 				++m_blank_lines_count;
 			}
 			else
-				if (regex_search(text, finded_words, expresion = "(/\\*([\\S\\s]*?)\\*/)"))
+				if (regex_search(text, finded_words, expresion = "(/\\*([\\S\\s]*?)\\*/)"))//readed line includes block comments, linear comments and code
 				{
 					regex_iterator<std::string::iterator> reg_iter_begin(text.begin(), text.end(), expresion);
 					regex_iterator<std::string::iterator> reg_iter_end;
 
-					vector<int> block_comment_position(text.length(), 0);
+					vector<int> block_comment_position(text.length(), 0);//in vector remember the comment block position
 
 					while (reg_iter_begin != reg_iter_end)
 					{
@@ -60,7 +63,7 @@ void CodeParser::Parse(string file_path)
 					regex_iterator<std::string::iterator> reg_iter_begin1(text.begin(), text.end(), expresion = "/{2,}");
 					regex_iterator<std::string::iterator> reg_iter_end1;
 
-					while (reg_iter_begin1 != reg_iter_end1)
+					while (reg_iter_begin1 != reg_iter_end1)//search the block comment in the linear comments
 					{
 						if (block_comment_position[reg_iter_begin1->position()] == 0)
 						{
@@ -72,7 +75,7 @@ void CodeParser::Parse(string file_path)
 							}
 
 							bool is_code = false;
-							for (int i = 0; i < reg_iter_begin1->position(); ++i)
+							for (int i = 0; i < reg_iter_begin1->position(); ++i)//search code between comments
 							{
 								if (block_comment_position[i] != block_comment_position[i + 1] && block_comment_position[i] == 0) is_code = false;
 								if (is_code)
@@ -99,13 +102,13 @@ void CodeParser::Parse(string file_path)
 					}
 				}
 				else
-					if (regex_search(text, finded_words, expresion = "/\\*"))
+					if (regex_search(text, finded_words, expresion = "/\\*"))//readed line is the begin of comment block
 					{
 						++m_comment_lines_count;
 						is_comment_block = true;
 
 						int comment_position = finded_words.position(0);
-						if (regex_search(text, finded_words, expresion = "[a-zA-Z0-9{}]+"))
+						if (regex_search(text, finded_words, expresion = "[a-zA-Z0-9{}]+"))//search code lines
 						{
 							if (finded_words.position(0) < comment_position)
 							{
@@ -114,11 +117,11 @@ void CodeParser::Parse(string file_path)
 						}
 					}
 					else
-						if (regex_search(text, finded_words, expresion = "(//)"))
+						if (regex_search(text, finded_words, expresion = "(//)"))//readed line is linear comment
 						{
 							++m_comment_lines_count;
 							int comment_position = finded_words.position(0);
-							if (regex_search(text, finded_words, expresion = "([a-zA-Z0-9{}]+)"))
+							if (regex_search(text, finded_words, expresion = "([a-zA-Z0-9{}]+)"))//search code lines
 							{
 								if (finded_words.position(0) < comment_position)
 								{

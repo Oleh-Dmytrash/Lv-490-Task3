@@ -8,9 +8,9 @@ int main()
 {
     DirectoryFilesParser dp;
 
-    string res = dp.ParseFiles("D:/programing/softserve/anytype_copy/TEST/");
+    string res = dp.ParseFiles("D:/programing/softserve/anytype_copy/AnyType/");
 
-    cout << res;   
+    cout << res;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
