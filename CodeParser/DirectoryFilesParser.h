@@ -3,6 +3,7 @@
 #include <thread>
 #include <vector>
 #include <chrono>
+#include <memory>
 #include "CodeParser.h"
 #include "DirectoryReader.h"
 
@@ -13,6 +14,6 @@ public:
 	~DirectoryFilesParser() {};
 	string ParseFiles(string directory_path);
 private:
-	vector<CodeParser*> m_parsers;
+	vector<shared_ptr<CodeParser>> m_parsers;
 };
 
