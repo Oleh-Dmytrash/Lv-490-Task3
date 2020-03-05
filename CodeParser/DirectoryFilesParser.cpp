@@ -1,6 +1,6 @@
 #include "DirectoryFilesParser.h"
 
-string DirectoryFilesParser::ParseFiles(string directory_path)
+string DirectoryFilesParser::ParseFiles(string& directory_path)
 {
     auto start_timer = chrono::high_resolution_clock::now();
 
@@ -21,9 +21,15 @@ string DirectoryFilesParser::ParseFiles(string directory_path)
     }
 
     string parse_info;
+    /*int all_count1 = 0;
+    int all_count2 = 0;
+    int all_count3 = 0;*/
     for (auto parser : m_parsers)
     {
         parse_info.append(parser->GetResult());
+        /*all_count1 += parser->GetBlankLinesCount();
+        all_count2 += parser->GetCommentLinesCount();
+        all_count3 += parser->GetCodeLinesCount();*/
     }
 
     auto stop_timer = chrono::high_resolution_clock::now();
@@ -39,6 +45,10 @@ string DirectoryFilesParser::ParseFiles(string directory_path)
     if (!output.is_open()) throw exception("can't open/create file");
     output << parse_info;
     output.close();
+
+    /*parse_info.append("blank: \t" + to_string(all_count1) + '\n');
+    parse_info.append("comment: \t" + to_string(all_count2) + '\n');
+    parse_info.append("code: \t" + to_string(all_count3) + '\n');*/
 
     return parse_info;
 }

@@ -9,8 +9,10 @@ int main()
 	try
 	{
 		DirectoryFilesParser dp;
+		
+		string path = "D:\\programing\\softserve\\TEST";
 
-		string res = dp.ParseFiles("D:/programing/softserve/TEST");
+		string res = dp.ParseFiles(path);
 
 		cout << res;
 	}

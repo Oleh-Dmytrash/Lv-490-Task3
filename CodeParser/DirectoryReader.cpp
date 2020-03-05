@@ -39,7 +39,7 @@ void DirectoryReader::ReadDirectory(string directory_path)
 	}
 }
 
-int DirectoryReader::GetFileCount()
+int DirectoryReader::GetFileCount() const
 {
 	return m_directory_files_path.size();
 }
@@ -48,7 +48,7 @@ string DirectoryReader::GetPath(int file_number)
 {
 	if ((signed)file_number > (signed)(m_directory_files_path.size() - 1))
 	{
-		return nullptr;
+		throw exception("Out of range in vector with files_path");
 	}
 	else
 	{

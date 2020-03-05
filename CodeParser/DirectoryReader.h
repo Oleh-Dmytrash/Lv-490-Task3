@@ -17,9 +17,9 @@ public:
 	void ReadDirectory();
 	void ReadDirectory(string directory_path);
 
-	int GetFileCount();
+	int GetFileCount() const;
 	string GetPath(int file_number);
-	string GetDirectoryPath() { return m_directory_path; }
+	string GetDirectoryPath() const { return m_directory_path; }
 
 	
 	
