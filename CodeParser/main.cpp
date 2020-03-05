@@ -6,11 +6,19 @@
 
 int main()
 {
-    DirectoryFilesParser dp;
+	try
+	{
+		DirectoryFilesParser dp;
 
-    string res = dp.ParseFiles("D:/programing/softserve/anytype_copy/AnyType/");
+		string res = dp.ParseFiles("D:/programing/softserve/TEST");
 
-    cout << res;
+		cout << res;
+	}
+	catch (const std::exception& ex)
+	{
+		cout << ex.what();
+	}
+	return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

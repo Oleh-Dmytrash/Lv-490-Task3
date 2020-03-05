@@ -21,6 +21,7 @@ void CodeParser::Parse(string file_path)
 	smatch finded_words;//finded word array
 	while (getline(read_file, text))
 	{
+		text += '\n';
 		if (is_comment_block)//readed line is a comment block
 		{
 			++m_comment_lines_count;
@@ -45,61 +46,56 @@ void CodeParser::Parse(string file_path)
 			else
 				if (regex_search(text, finded_words, expresion = "(/\\*([\\S\\s]*?)\\*/)"))//readed line includes block comments, linear comments and code
 				{
+					++m_comment_lines_count;
+										
 					regex_iterator<std::string::iterator> reg_iter_begin(text.begin(), text.end(), expresion);
 					regex_iterator<std::string::iterator> reg_iter_end;
 
-					vector<int> block_comment_position(text.length(), 0);//in vector remember the comment block position
+					vector<int> block_comment_position(text.length(), 0);
 
-					while (reg_iter_begin != reg_iter_end)
+					while (reg_iter_begin != reg_iter_end)//in vector remember the comment block position
 					{
-						for (unsigned int i = reg_iter_begin->position(); i < reg_iter_begin->position() + reg_iter_begin->str().length(); ++i)
+						for (size_t i = reg_iter_begin->position(); i < reg_iter_begin->position() + reg_iter_begin->str().length(); ++i)
 						{
 							block_comment_position[i] = 1;
 						}
-						++m_comment_lines_count;
 						++reg_iter_begin;
-					}
-
-					regex_iterator<std::string::iterator> reg_iter_begin1(text.begin(), text.end(), expresion = "/{2,}");
-					regex_iterator<std::string::iterator> reg_iter_end1;
-
-					while (reg_iter_begin1 != reg_iter_end1)//search the block comment in the linear comments
+					}					 					
+										
+					size_t block_begin_position = -1;
+					if (regex_search(text, finded_words, expresion = "/\\*([^\\*]*?[^/]*?)\n"))//readed line include the begin of comment block
 					{
-						if (block_comment_position[reg_iter_begin1->position()] == 0)
+						is_comment_block = true;
+						block_begin_position = finded_words.position(0);
+						for(size_t i = finded_words.position(0); i < finded_words.position(0) + finded_words.str(0).length() - 1; ++i)
 						{
-							++m_comment_lines_count;
-
-							for (unsigned int i = reg_iter_begin1->position(); i < block_comment_position.size() - 1; ++i)
-							{
-								if (block_comment_position[i] != block_comment_position[i + 1]) --m_comment_lines_count;
-							}
-
-							bool is_code = false;
-							for (int i = 0; i < reg_iter_begin1->position(); ++i)//search code between comments
-							{
-								if (block_comment_position[i] != block_comment_position[i + 1] && block_comment_position[i] == 0) is_code = false;
-								if (is_code)
-								{
-									continue;
-								}
-								else
-								{
-									if (block_comment_position[i] == 0 && text[i] != ' ' && text[i] != '\t')
-									{
-										++m_code_lines_count;
-										is_code = true;
-									}
-									else
-									{
-										is_code = false;
-									}
-								}
-							}
-
-							break;
+							block_comment_position[i] = 1;
 						}
-						++reg_iter_begin1;
 					}
+
+					bool is_code = false;
+					int slash_count = 0;
+					for (size_t i = 0; i < block_comment_position.size(); ++i)
+					{						
+						if (block_comment_position[i] == 0 && text[i] != ' ' && text[i] != '\t')
+						{
+							is_code = true;
+							if (text[i] == '/')
+							{
+								++slash_count;
+								if (slash_count == 2)
+								{
+									if (i < block_begin_position) is_comment_block = false;
+									if (is_code) ++m_code_lines_count;
+									break;
+								}
+							}
+							else
+							{
+								slash_count = 0;
+							}
+						}
+					}										
 				}
 				else
 					if (regex_search(text, finded_words, expresion = "/\\*"))//readed line is the begin of comment block

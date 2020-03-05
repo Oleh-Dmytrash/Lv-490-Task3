@@ -3,10 +3,7 @@
 void DirectoryReader::ReadDirectory()
 {
 	filesystem::path directory_path = m_directory_path;
-	if (m_directory_path == "") return;
-
-	if (!filesystem::is_directory(m_directory_path)) return;
-
+	if (!filesystem::is_directory(directory_path)) throw exception("Invalid directory path");	
 	const regex cpp_files("\\.(?:c|cpp|h|hpp)");
 
 	for (const auto& entry : filesystem::directory_iterator(m_directory_path))
@@ -27,7 +24,7 @@ void DirectoryReader::ReadDirectory(string directory_path)
 	}
 	else
 	{
-		return;
+		throw exception("Invalid directory path");
 	}
 
 	const std::regex cpp_files("\\.(?:c|cpp|h|hpp)");
