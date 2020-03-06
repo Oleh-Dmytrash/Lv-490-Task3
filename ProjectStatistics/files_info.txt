@@ -1,0 +1,721 @@
+Time in ms  = 38
+File name: NewFolder1\align.hpp
+Number of blank lines: 3
+Number of comment lines: 7
+Number of code lines: 13
+
+File name: NewFolder1\aligned_storage.hpp
+Number of blank lines: 4
+Number of comment lines: 12
+Number of code lines: 3
+
+File name: NewFolder1\any.hpp
+Number of blank lines: 65
+Number of comment lines: 43
+Number of code lines: 251
+
+File name: NewFolder1\array.hpp
+Number of blank lines: 68
+Number of comment lines: 96
+Number of code lines: 353
+
+File name: NewFolder1\asio.hpp
+Number of blank lines: 5
+Number of comment lines: 13
+Number of code lines: 129
+
+File name: NewFolder1\assert.hpp
+Number of blank lines: 21
+Number of comment lines: 36
+Number of code lines: 32
+
+File name: NewFolder1\assign.hpp
+Number of blank lines: 6
+Number of comment lines: 9
+Number of code lines: 10
+
+File name: NewFolder1\atomic.hpp
+Number of blank lines: 5
+Number of comment lines: 6
+Number of code lines: 8
+
+File name: NewFolder1\beast.hpp
+Number of blank lines: 5
+Number of comment lines: 9
+Number of code lines: 8
+
+File name: NewFolder1\bimap.hpp
+Number of blank lines: 6
+Number of comment lines: 9
+Number of code lines: 5
+
+File name: NewFolder1\bind.hpp
+Number of blank lines: 10
+Number of comment lines: 14
+Number of code lines: 18
+
+File name: NewFolder1\blank.hpp
+Number of blank lines: 23
+Number of comment lines: 23
+Number of code lines: 64
+
+File name: NewFolder1\blank_fwd.hpp
+Number of blank lines: 6
+Number of comment lines: 13
+Number of code lines: 4
+
+File name: NewFolder1\call_traits.hpp
+Number of blank lines: 6
+Number of comment lines: 9
+Number of code lines: 6
+
+File name: NewFolder1\callable_traits.hpp
+Number of blank lines: 4
+Number of comment lines: 7
+Number of code lines: 37
+
+File name: NewFolder1\cast.hpp
+Number of blank lines: 5
+Number of comment lines: 12
+Number of code lines: 4
+
+File name: NewFolder1\cerrno.hpp
+Number of blank lines: 86
+Number of comment lines: 9
+Number of code lines: 237
+
+File name: NewFolder1\checked_delete.hpp
+Number of blank lines: 5
+Number of comment lines: 9
+Number of code lines: 4
+
+File name: NewFolder1\chrono.hpp
+Number of blank lines: 4
+Number of comment lines: 14
+Number of code lines: 4
+
+File name: NewFolder1\circular_buffer.hpp
+Number of blank lines: 14
+Number of comment lines: 12
+Number of code lines: 41
+
+File name: NewFolder1\circular_buffer_fwd.hpp
+Number of blank lines: 14
+Number of comment lines: 8
+Number of code lines: 22
+
+File name: NewFolder1\compressed_pair.hpp
+Number of blank lines: 6
+Number of comment lines: 9
+Number of code lines: 6
+
+File name: NewFolder1\compute.hpp
+Number of blank lines: 5
+Number of comment lines: 10
+Number of code lines: 30
+
+File name: NewFolder1\concept_archetype.hpp
+Number of blank lines: 55
+Number of comment lines: 48
+Number of code lines: 599
+
+File name: NewFolder1\concept_check.hpp
+Number of blank lines: 142
+Number of comment lines: 107
+Number of code lines: 919
+
+File name: NewFolder1\config.hpp
+Number of blank lines: 12
+Number of comment lines: 23
+Number of code lines: 43
+
+File name: NewFolder1\contract.hpp
+Number of blank lines: 5
+Number of comment lines: 26
+Number of code lines: 14
+
+File name: NewFolder1\contract_macro.hpp
+Number of blank lines: 49
+Number of comment lines: 1207
+Number of code lines: 168
+
+File name: NewFolder1\convert.hpp
+Number of blank lines: 30
+Number of comment lines: 64
+Number of code lines: 158
+
+File name: NewFolder1\crc.hpp
+Number of blank lines: 178
+Number of comment lines: 1335
+Number of code lines: 1003
+
+File name: NewFolder1\cregex.hpp
+Number of blank lines: 16
+Number of comment lines: 18
+Number of code lines: 6
+
+File name: NewFolder1\cstdfloat.hpp
+Number of blank lines: 11
+Number of comment lines: 18
+Number of code lines: 36
+
+File name: NewFolder1\cstdint.hpp
+Number of blank lines: 88
+Number of comment lines: 108
+Number of code lines: 394
+
+File name: NewFolder1\cstdlib.hpp
+Number of blank lines: 11
+Number of comment lines: 24
+Number of code lines: 22
+
+File name: NewFolder1\current_function.hpp
+Number of blank lines: 29
+Number of comment lines: 15
+Number of code lines: 32
+
+File name: NewFolder1\cxx11_char_types.hpp
+Number of blank lines: 11
+Number of comment lines: 41
+Number of code lines: 21
+
+File name: NewFolder1\date_time.hpp
+Number of blank lines: 4
+Number of comment lines: 10
+Number of code lines: 5
+
+File name: NewFolder1\dll.hpp
+Number of blank lines: 8
+Number of comment lines: 9
+Number of code lines: 11
+
+File name: NewFolder1\dynamic_bitset.hpp
+Number of blank lines: 4
+Number of comment lines: 11
+Number of code lines: 3
+
+File name: NewFolder1\dynamic_bitset_fwd.hpp
+Number of blank lines: 7
+Number of comment lines: 11
+Number of code lines: 8
+
+File name: NewFolder1\enable_shared_from_this.hpp
+Number of blank lines: 3
+Number of comment lines: 12
+Number of code lines: 4
+
+File name: NewFolder1\exception_ptr.hpp
+Number of blank lines: 5
+Number of comment lines: 3
+Number of code lines: 4
+
+File name: NewFolder1\filesystem.hpp
+Number of blank lines: 8
+Number of comment lines: 7
+Number of code lines: 7
+
+File name: NewFolder1\flyweight.hpp
+Number of blank lines: 5
+Number of comment lines: 7
+Number of code lines: 11
+
+File name: NewFolder1\foreach.hpp
+Number of blank lines: 151
+Number of comment lines: 261
+Number of code lines: 836
+
+File name: NewFolder1\foreach_fwd.hpp
+Number of blank lines: 10
+Number of comment lines: 26
+Number of code lines: 28
+
+File name: NewFolder1\format.hpp
+Number of blank lines: 19
+Number of comment lines: 24
+Number of code lines: 30
+
+File name: NewFolder1\function.hpp
+Number of blank lines: 12
+Number of comment lines: 15
+Number of code lines: 51
+
+File name: NewFolder1\function_equal.hpp
+Number of blank lines: 9
+Number of comment lines: 11
+Number of code lines: 10
+
+File name: NewFolder1\function_output_iterator.hpp
+Number of blank lines: 5
+Number of comment lines: 7
+Number of code lines: 3
+
+File name: NewFolder1\functional.hpp
+Number of blank lines: 62
+Number of comment lines: 65
+Number of code lines: 502
+
+File name: NewFolder1\generator_iterator.hpp
+Number of blank lines: 18
+Number of comment lines: 12
+Number of code lines: 56
+
+File name: NewFolder1\geometry.hpp
+Number of blank lines: 7
+Number of comment lines: 10
+Number of code lines: 3
+
+File name: NewFolder1\get_pointer.hpp
+Number of blank lines: 19
+Number of comment lines: 18
+Number of code lines: 45
+
+File name: NewFolder1\gil.hpp
+Number of blank lines: 3
+Number of comment lines: 8
+Number of code lines: 39
+
+File name: NewFolder1\hana.hpp
+Number of blank lines: 16
+Number of comment lines: 34
+Number of code lines: 163
+
+File name: NewFolder1\histogram.hpp
+Number of blank lines: 5
+Number of comment lines: 15
+Number of code lines: 18
+
+File name: NewFolder1\hof.hpp
+Number of blank lines: 7
+Number of comment lines: 7
+Number of code lines: 50
+
+File name: NewFolder1\implicit_cast.hpp
+Number of blank lines: 11
+Number of comment lines: 14
+Number of code lines: 14
+
+File name: NewFolder1\indirect_reference.hpp
+Number of blank lines: 7
+Number of comment lines: 11
+Number of code lines: 26
+
+File name: NewFolder1\integer.hpp
+Number of blank lines: 28
+Number of comment lines: 54
+Number of code lines: 209
+
+File name: NewFolder1\integer_fwd.hpp
+Number of blank lines: 61
+Number of comment lines: 28
+Number of code lines: 111
+
+File name: NewFolder1\integer_traits.hpp
+Number of blank lines: 46
+Number of comment lines: 40
+Number of code lines: 184
+
+File name: NewFolder1\intrusive_ptr.hpp
+Number of blank lines: 3
+Number of comment lines: 12
+Number of code lines: 4
+
+File name: NewFolder1\io_fwd.hpp
+Number of blank lines: 17
+Number of comment lines: 10
+Number of code lines: 42
+
+File name: NewFolder1\is_placeholder.hpp
+Number of blank lines: 9
+Number of comment lines: 11
+Number of code lines: 12
+
+File name: NewFolder1\iterator.hpp
+Number of blank lines: 8
+Number of comment lines: 7
+Number of code lines: 6
+
+File name: NewFolder1\iterator_adaptors.hpp
+Number of blank lines: 5
+Number of comment lines: 5
+Number of code lines: 4
+
+File name: NewFolder1\lexical_cast.hpp
+Number of blank lines: 16
+Number of comment lines: 18
+Number of code lines: 72
+
+File name: NewFolder1\limits.hpp
+Number of blank lines: 23
+Number of comment lines: 9
+Number of code lines: 115
+
+File name: NewFolder1\local_function.hpp
+Number of blank lines: 21
+Number of comment lines: 390
+Number of code lines: 62
+
+File name: NewFolder1\locale.hpp
+Number of blank lines: 3
+Number of comment lines: 8
+Number of code lines: 18
+
+File name: NewFolder1\make_default.hpp
+Number of blank lines: 5
+Number of comment lines: 30
+Number of code lines: 30
+
+File name: NewFolder1\make_shared.hpp
+Number of blank lines: 3
+Number of comment lines: 10
+Number of code lines: 4
+
+File name: NewFolder1\make_unique.hpp
+Number of blank lines: 3
+Number of comment lines: 7
+Number of code lines: 4
+
+File name: NewFolder1\math_fwd.hpp
+Number of blank lines: 16
+Number of comment lines: 11
+Number of code lines: 17
+
+File name: NewFolder1\mem_fn.hpp
+Number of blank lines: 5
+Number of comment lines: 13
+Number of code lines: 7
+
+File name: NewFolder1\memory_order.hpp
+Number of blank lines: 16
+Number of comment lines: 38
+Number of code lines: 39
+
+File name: NewFolder1\metaparse.hpp
+Number of blank lines: 3
+Number of comment lines: 4
+Number of code lines: 112
+
+File name: NewFolder1\mp11.hpp
+Number of blank lines: 3
+Number of comment lines: 7
+Number of code lines: 13
+
+File name: NewFolder1\mpi.hpp
+Number of blank lines: 7
+Number of comment lines: 15
+Number of code lines: 15
+
+File name: NewFolder1\multi_array.hpp
+Number of blank lines: 107
+Number of comment lines: 56
+Number of code lines: 438
+
+File name: NewFolder1\multi_index_container.hpp
+Number of blank lines: 195
+Number of comment lines: 63
+Number of code lines: 1174
+
+File name: NewFolder1\multi_index_container_fwd.hpp
+Number of blank lines: 27
+Number of comment lines: 19
+Number of code lines: 77
+
+File name: NewFolder1\next_prior.hpp
+Number of blank lines: 35
+Number of comment lines: 28
+Number of code lines: 135
+
+File name: NewFolder1\non_type.hpp
+Number of blank lines: 10
+Number of comment lines: 12
+Number of code lines: 7
+
+File name: NewFolder1\noncopyable.hpp
+Number of blank lines: 5
+Number of comment lines: 9
+Number of code lines: 4
+
+File name: NewFolder1\nondet_random.hpp
+Number of blank lines: 6
+Number of comment lines: 14
+Number of code lines: 3
+
+File name: NewFolder1\none.hpp
+Number of blank lines: 19
+Number of comment lines: 22
+Number of code lines: 22
+
+File name: NewFolder1\none_t.hpp
+Number of blank lines: 11
+Number of comment lines: 16
+Number of code lines: 15
+
+File name: NewFolder1\operators.hpp
+Number of blank lines: 123
+Number of comment lines: 162
+Number of code lines: 642
+
+File name: NewFolder1\operators_v1.hpp
+Number of blank lines: 137
+Number of comment lines: 177
+Number of code lines: 658
+
+File name: NewFolder1\optional.hpp
+Number of blank lines: 4
+Number of comment lines: 11
+Number of code lines: 5
+
+File name: NewFolder1\outcome.hpp
+Number of blank lines: 2
+Number of comment lines: 29
+Number of code lines: 7
+
+File name: NewFolder1\parameter.hpp
+Number of blank lines: 6
+Number of comment lines: 6
+Number of code lines: 10
+
+File name: NewFolder1\phoenix.hpp
+Number of blank lines: 4
+Number of comment lines: 7
+Number of code lines: 3
+
+File name: NewFolder1\pointee.hpp
+Number of blank lines: 14
+Number of comment lines: 13
+Number of code lines: 50
+
+File name: NewFolder1\pointer_cast.hpp
+Number of blank lines: 33
+Number of comment lines: 24
+Number of code lines: 78
+
+File name: NewFolder1\pointer_to_other.hpp
+Number of blank lines: 10
+Number of comment lines: 16
+Number of code lines: 30
+
+File name: NewFolder1\polymorphic_cast.hpp
+Number of blank lines: 18
+Number of comment lines: 60
+Number of code lines: 29
+
+File name: NewFolder1\polymorphic_pointer_cast.hpp
+Number of blank lines: 16
+Number of comment lines: 19
+Number of code lines: 49
+
+File name: NewFolder1\predef.h
+Number of blank lines: 5
+Number of comment lines: 6
+Number of code lines: 14
+
+File name: NewFolder1\preprocessor.hpp
+Number of blank lines: 1
+Number of comment lines: 10
+Number of code lines: 11
+
+File name: NewFolder1\process.hpp
+Number of blank lines: 5
+Number of comment lines: 16
+Number of code lines: 21
+
+File name: NewFolder1\program_options.hpp
+Number of blank lines: 6
+Number of comment lines: 5
+Number of code lines: 15
+
+File name: NewFolder1\progress.hpp
+Number of blank lines: 27
+Number of comment lines: 55
+Number of code lines: 90
+
+File name: NewFolder1\python.hpp
+Number of blank lines: 5
+Number of comment lines: 6
+Number of code lines: 65
+
+File name: NewFolder1\random.hpp
+Number of blank lines: 7
+Number of comment lines: 34
+Number of code lines: 54
+
+File name: NewFolder1\range.hpp
+Number of blank lines: 5
+Number of comment lines: 9
+Number of code lines: 10
+
+File name: NewFolder1\ratio.hpp
+Number of blank lines: 7
+Number of comment lines: 5
+Number of code lines: 3
+
+File name: NewFolder1\rational.hpp
+Number of blank lines: 112
+Number of comment lines: 242
+Number of code lines: 829
+
+File name: NewFolder1\ref.hpp
+Number of blank lines: 5
+Number of comment lines: 9
+Number of code lines: 4
+
+File name: NewFolder1\regex.h
+Number of blank lines: 16
+Number of comment lines: 22
+Number of code lines: 64
+
+File name: NewFolder1\regex.hpp
+Number of blank lines: 12
+Number of comment lines: 20
+Number of code lines: 6
+
+File name: NewFolder1\regex_fwd.hpp
+Number of blank lines: 10
+Number of comment lines: 17
+Number of code lines: 7
+
+File name: NewFolder1\scope_exit.hpp
+Number of blank lines: 168
+Number of comment lines: 578
+Number of code lines: 733
+
+File name: NewFolder1\scoped_array.hpp
+Number of blank lines: 3
+Number of comment lines: 9
+Number of code lines: 4
+
+File name: NewFolder1\scoped_ptr.hpp
+Number of blank lines: 3
+Number of comment lines: 9
+Number of code lines: 4
+
+File name: NewFolder1\shared_array.hpp
+Number of blank lines: 3
+Number of comment lines: 13
+Number of code lines: 4
+
+File name: NewFolder1\shared_container_iterator.hpp
+Number of blank lines: 20
+Number of comment lines: 8
+Number of code lines: 42
+
+File name: NewFolder1\shared_ptr.hpp
+Number of blank lines: 3
+Number of comment lines: 13
+Number of code lines: 4
+
+File name: NewFolder1\signals2.hpp
+Number of blank lines: 7
+Number of comment lines: 7
+Number of code lines: 10
+
+File name: NewFolder1\smart_ptr.hpp
+Number of blank lines: 3
+Number of comment lines: 13
+Number of code lines: 11
+
+File name: NewFolder1\spirit.hpp
+Number of blank lines: 5
+Number of comment lines: 8
+Number of code lines: 15
+
+File name: NewFolder1\stacktrace.hpp
+Number of blank lines: 5
+Number of comment lines: 6
+Number of code lines: 9
+
+File name: NewFolder1\static_assert.hpp
+Number of blank lines: 22
+Number of comment lines: 56
+Number of code lines: 116
+
+File name: NewFolder1\swap.hpp
+Number of blank lines: 5
+Number of comment lines: 9
+Number of code lines: 4
+
+File name: NewFolder1\thread.hpp
+Number of blank lines: 5
+Number of comment lines: 7
+Number of code lines: 15
+
+File name: NewFolder1\throw_exception.hpp
+Number of blank lines: 17
+Number of comment lines: 17
+Number of code lines: 72
+
+File name: NewFolder1\timer.hpp
+Number of blank lines: 20
+Number of comment lines: 34
+Number of code lines: 29
+
+File name: NewFolder1\token_functions.hpp
+Number of blank lines: 93
+Number of comment lines: 112
+Number of code lines: 520
+
+File name: NewFolder1\token_iterator.hpp
+Number of blank lines: 31
+Number of comment lines: 14
+Number of code lines: 89
+
+File name: NewFolder1\tokenizer.hpp
+Number of blank lines: 26
+Number of comment lines: 17
+Number of code lines: 61
+
+File name: NewFolder1\type.hpp
+Number of blank lines: 6
+Number of comment lines: 7
+Number of code lines: 8
+
+File name: NewFolder1\type_index.hpp
+Number of blank lines: 29
+Number of comment lines: 176
+Number of code lines: 78
+
+File name: NewFolder1\type_traits.hpp
+Number of blank lines: 9
+Number of comment lines: 8
+Number of code lines: 141
+
+File name: NewFolder1\unordered_map.hpp
+Number of blank lines: 6
+Number of comment lines: 6
+Number of code lines: 7
+
+File name: NewFolder1\unordered_set.hpp
+Number of blank lines: 6
+Number of comment lines: 6
+Number of code lines: 7
+
+File name: NewFolder1\utility.hpp
+Number of blank lines: 8
+Number of comment lines: 8
+Number of code lines: 9
+
+File name: NewFolder1\variant.hpp
+Number of blank lines: 5
+Number of comment lines: 14
+Number of code lines: 11
+
+File name: NewFolder1\version.hpp
+Number of blank lines: 9
+Number of comment lines: 19
+Number of code lines: 5
+
+File name: NewFolder1\visit_each.hpp
+Number of blank lines: 7
+Number of comment lines: 7
+Number of code lines: 14
+
+File name: NewFolder1\wave.hpp
+Number of blank lines: 5
+Number of comment lines: 12
+Number of code lines: 7
+
+File name: NewFolder1\weak_ptr.hpp
+Number of blank lines: 3
+Number of comment lines: 12
+Number of code lines: 4
+
