@@ -29,5 +29,6 @@ private:
 	int countLinesFile();
 	int countWhiteLines();
 	int countCommentLines();
+	int countCodeLines();
 	int countFileSize();
 };

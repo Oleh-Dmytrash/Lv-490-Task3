@@ -4,9 +4,9 @@ Parser::Parser(string strr, string paths) :str(strr), path(paths), r_num_of_line
 {
 	if (isCFile())
 	{
-		num_of_lines = countFileSize();
 		num_of_coments = countCommentLines();
 		num_of_white_lines = countWhiteLines();
+		num_of_lines = countCodeLines();
 	}
 };
 int Parser::countLinesRegex(regex x)
@@ -23,18 +23,25 @@ int Parser::countLinesRegex(regex x)
 	}
 	return res;
 }
+int Parser::countCodeLines() 
+{
+	auto re = regex(("((((/\\*(.|\n)*?\\*/)\|(//[^\n\r]*))\|(^\s*$)))"));
+	str = regex_replace(str, re, "");
+	return (count(str.begin(), str.end(), '\n') - countLinesRegex(r_num_of_white_lines) + 1);
+}
 int Parser::countCommentLines()
 {
 	return countLinesRegex(r_num_of_coments);
 }
 int Parser::countWhiteLines()
 {
-	return countLinesRegex(r_num_of_white_lines)+1;
+	return countLinesRegex(r_num_of_white_lines);
 }
 int Parser::countFileSize()
 {
 	return count(str.begin(), str.end(), '\n')+1;
 }
+
 string Parser::info() 
 {
 	
