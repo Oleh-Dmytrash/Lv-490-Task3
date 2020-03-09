@@ -15,7 +15,7 @@
 class DirectoryReader
 {
 public:
-	std::map<std::string, std::string> GetCppFilesInFolder(std::string path_to_folder);
+	static std::map<std::string, std::string> GetCppFilesInFolder(std::string path_to_folder);
 	
 };
 

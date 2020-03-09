@@ -5,7 +5,10 @@ std::map<std::string, std::string> DirectoryReader::GetCppFilesInFolder(std::str
 	std::map<std::string, std::string> files_in_directory;
 
 	const std::regex cpp_files("\\.(?:cpp|c|h|hpp)");
-
+	if (!std::filesystem::is_directory(path_to_folder))
+	{
+		throw std::runtime_error("The path specified is not a directory");
+	}
 	std::filesystem::directory_iterator folder(path_to_folder);
 	for (auto& entry : folder)
 	{
